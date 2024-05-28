@@ -33,7 +33,7 @@ document.addEventListener("dragleave", (e) => {
 document.addEventListener("drop", (event) => {
   event.preventDefault();
   console.log("drop");
-  if (event.target.classList.contains("inner")) {
+  if (event.target.classList.contains("file-wrap")) {
     const files = event.dataTransfer?.files;
     if (files) {
       handleUpdate([...files]);
